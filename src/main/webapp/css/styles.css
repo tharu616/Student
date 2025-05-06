@@ -1,0 +1,154 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+}
+.navbar-brand img {
+    max-height: 30px; /* Ensure the logo doesn't overflow */
+    margin-right: 5px; /* Space between logo and text */
+}
+
+/* Header with Background Image */
+.bg-image {
+    background-image: url('../images/pexels-divinetechygirl-1181243.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Adjust as needed */
+    position: relative;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+
+/* Container Padding */
+.container {
+    background-color:rgba(0.5, 0.5, 0.5, 0.2);
+    padding: 50px;
+}
+
+/* Buttons Width */
+.btn-lg {
+    width: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .col-md-6 {
+        text-align: center;
+        
+    }
+}
+
+.course-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+}
+
+.carousel-arrow {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.course-card-container {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.course-card {
+    width: 250px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5%);
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.course-card .card-body {
+    padding: 10px;
+}
+
+.course-card .card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.course-card .card-text {
+    font-size: 14px;
+    color: #6c757d;
+}
+/* Footer Styling */
+footer {
+    background-color: #1a1a1a; /* Dark background color */
+    color: white; /* Light text color */
+    background-size: contain;
+}
+
+footer .fab {
+    font-size: 20px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer .fab:hover {
+    color: #007bff; /* Blue hover color */
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #007bff; /* Blue hover color */
+}
+
+footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer p {
+    margin-bottom: 0;
+}
