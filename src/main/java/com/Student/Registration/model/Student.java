@@ -4,6 +4,7 @@ public class Student {
     private String id;
     private String name;
     private String email;
+    private String password;
 
     public Student(String id, String name, String email) {
         this.id = id;
