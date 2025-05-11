@@ -1,3 +1,6 @@
-admin,password123
-john,pass456
-jane,hello123
+tharusha rukshan,23e56131323,tharusharukshan573@gmail.com,1236547899,2003-09-06,Male,761535759,761535759,no.21/5 temple road,kalutara,2000,,2019,[d-happy-student-man-headphone-isolated-white-transparent-background-png-image-visually-stunning-high-quality-374363908-removebg-preview.png],dayani fernando,0777295153,dayani123@gmail.com
+
+
+chathura,200316113130,It24101663@my.sliit.lk,4563321256161,2003-02-04,Male,0761535757,0761535758,no.43/6 kalutara,kalutara,23334,,2010,[],Piyarathna,0777295156,piyarathna4556@gmail.com
+rukshan,200645874123,rukshanChathura573@gmail.com,741852963,2009-05-06,Male,0766483727,0766483727,no,1213, colombo,Colombo,30001,,1999,[],pakaya sri,0745153575,pakaya@gmail.com
+ibiowebi,564656311656,cariya@gmail.com,8798456313213,2005-05-05,Male,0761535757,0766483727,wqdewf2gwr13e1re24fweqdf,Colombo,19091,,2019,[],cariya john,0765554622,cariyajohn@gmail.com

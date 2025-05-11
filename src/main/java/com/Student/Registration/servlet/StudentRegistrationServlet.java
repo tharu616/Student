@@ -1,42 +1,84 @@
 package com.Student.Registration.servlet;
 
-import com.Student.Registration.dao.FileHandler;
-import com.Student.Registration.model.Student;
-
-import jakarta.servlet.*;
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
+import com.Student.Registration.dao.UserDao;
+import com.Student.Registration.model.User;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
+import org.mindrot.jbcrypt.BCrypt;
 
-    @WebServlet("/registerStudent")
+@WebServlet("/StudentRegistrationServlet")
 public class StudentRegistrationServlet extends HttpServlet {
 
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Set character encoding to handle special characters
-        request.setCharacterEncoding("UTF-8");
-
-        // Get form parameters
-        String id = request.getParameter("id");
-        String name = request.getParameter("name");
-        String email = request.getParameter("email");
-
-        // Create Student object
-        Student student = new Student(id, name, email);
-
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         try {
-            // Save student to file using FileHandler
-            FileHandler.saveStudent(student);
+            // Get form data
+            String fullName = getParam(request, "fullName");
+            String nic = getParam(request, "nic");
+            String email = getParam(request, "email");
+            String password = getParam(request, "password");
+            String dateOfBirth = getParam(request, "dateOfBirth");
+            String gender = getParam(request, "gender");
 
-            // Redirect to success page or view registrations
+            String mobileNumber = getParam(request, "mobileNumber");
+            String whatsAppNumber = getParam(request, "whatsAppNumber");
+            String permanentAddress = getParam(request, "permanentAddress");
+            String districtOrProvince = getParam(request, "districtOrProvince");
+            String postalCode = getParam(request, "postalCode");
+            String indexNumber = getParam(request, "olIndex"); // Changed from indexNumber to olIndex
+            String yearOfCompletion = getParam(request, "yearOfCompletion");
+
+            String[] certificateValues = request.getParameterValues("Upload Certificates"); // Match input name
+            List<String> certificates = (certificateValues != null) ? Arrays.asList(certificateValues) : List.of();
+
+            String parentFullName = getParam(request, "parentFullName");
+            String parentContactNumber = getParam(request, "parentContactNumber");
+            String parentEmail = getParam(request, "parentEmail");
+
+            long timestamp = System.currentTimeMillis();
+
+            // Create User
+            User user = new User(
+                    fullName, nic, email, password, dateOfBirth, gender,
+                    mobileNumber, whatsAppNumber, permanentAddress, districtOrProvince,
+                    postalCode, indexNumber, yearOfCompletion, certificates,
+                    parentFullName, parentContactNumber, parentEmail
+            );
+
+            // Save user
+            UserDao userDao = new UserDao();
+            userDao.saveUser(user);
+
+            // Redirect on success
             response.sendRedirect("registrationSuccess.jsp");
 
         } catch (Exception e) {
-            // Log error and show error message
             e.printStackTrace();
-            request.setAttribute("errorMessage", "Error registering student: " + e.getMessage());
-            RequestDispatcher dispatcher = request.getRequestDispatcher("error.jsp");
-            dispatcher.forward(request, response);
+            response.sendRedirect("singUp.jsp?error=1");
+        }
+    }
+
+    private String getParam(HttpServletRequest request, String paramName) {
+        String value = request.getParameter(paramName);
+        return (value != null) ? value.trim() : "";
+    }
+
+    // Helper: Hash password using BCrypt
+    private String hashPassword(String password) {
+        return BCrypt.hashpw(password, BCrypt.gensalt());
+    }
+
+    // Helper: Safe Integer parsing
+    private int parseInt(String value, int defaultValue) {
+        if (value == null || value.isEmpty()) return defaultValue;
+        try {
+            return Integer.parseInt(value);
+        } catch (NumberFormatException e) {
+            return defaultValue;
         }
     }
 }

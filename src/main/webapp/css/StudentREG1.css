@@ -1,0 +1,71 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+header {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100px; /* Reduced from 200px to 100px */
+    padding-top: 10px; /* Optional: Add some padding for better spacing */
+    padding-bottom: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link.active {
+    color: #007bff;
+}
+
+/* Logo */
+.logo {
+    max-width: 100px; /* Limit the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+
+}
+
+/* Background Image */
+.bg-image {
+    background-image: url('./istockphoto-1392001982-612x612.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust as needed */
+    width: 400px;
+}
+
+/* Main Content */
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card button {
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
