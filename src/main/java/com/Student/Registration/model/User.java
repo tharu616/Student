@@ -21,6 +21,7 @@ public class User {
     private String parentContactNumber;
     private String parentEmail;
     private long timestamp;
+    private String registerNumber;
 
     public User(String fullName, String nic, String email, String password, String dateOfBirth, String gender,
                 String mobileNumber, String whatsAppNumber, String permanentAddress, String districtOrProvince,
@@ -99,4 +100,7 @@ public class User {
     public void setParentEmail(String parentEmail) { this.parentEmail = parentEmail; }
 
     public long getTimestamp() { return timestamp; }
+    // Add getter and setter
+    public String getRegisterNumber() { return registerNumber; }
+    public void setRegisterNumber(String registerNumber) { this.registerNumber = registerNumber; }
 }

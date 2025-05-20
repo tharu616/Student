@@ -9,15 +9,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Login Success</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap @5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<div class="container mt-5 text-center">
-    <h2 class="text-success">✅ Login Successful!</h2>
-    <p>Welcome back!</p>
-    <a href="RegistrationForm.jsp" class="btn btn-primary">Go to Registration Form</a>
-</div>
+<h2>✅ Login Successful!</h2>
+<p>Welcome back!</p>
+<a href="RegistrationForm.jsp">Go Back</a>
 </body>
 </html>

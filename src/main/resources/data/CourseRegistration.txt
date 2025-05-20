@@ -1,0 +1,16 @@
+cariya@gmail.com,Unknown,SCCS004,C Programming Language,null,School of Computing,1747680671595
+tharusharukshan573@gmail.com,tharusha rukshan,SLSC005,Public Health & Epidemiology,null,School of Life Science,1747680939583
+tharusharukshan573@gmail.com,tharusha rukshan,SLSC001,Lab Techniques in Life Sciences,null,School of Life Science,1747718519983
+It24101663@my.sliit.lk,chathura,SLSC001,Lab Techniques in Life Sciences,null,School of Life Science,1747730018034
+lala54@gmail.com,tharusha rukshan,SLSC001,Lab Techniques in Life Sciences,null,School of Life Science,1747733709936
+cariya@gmail.com,tharusha rukshan,SLSC001,Lab Techniques in Life Sciences,null,School of Life Science,1747739847694
+It24101663@my.sliit.lk,chathura,SLSC001,Lab Techniques in Life Sciences,null,School of Life Science,1747740819577
+cariya@gmail.com,tharusha rukshan,SLSC004,Cell & Molecular Biology,null,School of Life Science,1747741087910
+cariya@gmail.com,tharusha rukshan,SLSC004,Cell & Molecular Biology,null,School of Life Science,1747741099253
+tharusharukshan573@gmail.com,tharusha rukshan,SLSC004,Cell & Molecular Biology,null,School of Life Science,1747741354296
+tharusharukshan573@gmail.com,tharusha rukshan,SLSC005,Public Health & Epidemiology,null,School of Life Science,1747742097277
+tharusharukshan573@gmail.com,tharusha rukshan,SLSC002,Food and Nutrition Science,null,School of Life Science,1747742238801
+tharusharukshan573@gmail.com,tharusha rukshan,SLSC004,Cell & Molecular Biology,null,School of Life Science,1747742810667
+tharusharukshan573@gmail.com,tharusha rukshan,SLSC004,Cell & Molecular Biology,null,School of Life Science,1747742867951
+It24101663@my.sliit.lk,chathura,SLSC004,Cell & Molecular Biology,null,School of Life Science,1747742994165
+tharusharukshan573@gmail.com,tharusha rukshan,SLSC004,Cell & Molecular Biology,null,School of Life Science,1747743221250

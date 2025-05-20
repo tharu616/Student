@@ -195,6 +195,7 @@
     </div>
 </div>
 
+
 <!-- JavaScript -->
 <script src="js/RegistrationForm.js"></script>
 </body>

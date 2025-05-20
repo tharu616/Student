@@ -1,0 +1,182 @@
+{
+  "School of Business": {
+    "Digital Marketing": {
+      "Course Code": "SBDM001",
+      "Duration": "03 months",
+      "Fee": "Rs.42,000"
+    },
+    "Business Management": {
+      "Course Code": "SBDM002",
+      "Duration": "06 months",
+      "Fee": "Rs.75,000"
+    },
+    "Professional Certificate in Marketing": {
+      "Course Code": "SBDM003",
+      "Duration": "04 months",
+      "Fee": "Rs.44,000"
+    },
+    "Digital Banking and Finance": {
+      "Course Code": "SBDM004",
+      "Duration": "05 months",
+      "Fee": "Rs.75,000"
+    },
+    "Financial and Management Accounting": {
+      "Course Code": "SBDM005",
+      "Duration": "04 months",
+      "Fee": "Rs.70,000"
+    },
+    "Business Analytics": {
+      "Course Code": "SBDM006",
+      "Duration": "05 months",
+      "Fee": "Rs.55,000"
+    },
+    "Business Law": {
+      "Course Code": "SBDM007",
+      "Duration": "06 months",
+      "Fee": "Rs.58,000"
+    },
+    "International Business": {
+      "Course Code": "SBDM008",
+      "Duration": "06 months",
+      "Fee": "Rs.70,000"
+    }
+  },
+  "School of English": {
+    "English for Academic Purposes": {
+      "Course Code": "SEEN001",
+      "Duration": "04 months",
+      "Fee": "Rs.40,000"
+    },
+    "Public Speaking and Communication": {
+      "Course Code": "SEEN002",
+      "Duration": "04 months",
+      "Fee": "Rs.45,000"
+    },
+    "Listening and Speaking Skills": {
+      "Course Code": "SEEN003",
+      "Duration": "03 months",
+      "Fee": "Rs.30,000"
+    },
+    "British Council IELTS Course": {
+      "Course Code": "SEEN004",
+      "Duration": "05 months",
+      "Fee": "Rs.55,000"
+    },
+    "British Literature": {
+      "Course Code": "SEEN005",
+      "Duration": "05 months",
+      "Fee": "Rs.58,000"
+    }
+  },
+  "School of Computing": {
+    "Machine Learning": {
+      "Course Code": "SCCS001",
+      "Duration": "06 months",
+      "Fee": "Rs.65,000"
+    },
+    "Computer Science with Artificial Intelligence": {
+      "Course Code": "SCCS002",
+      "Duration": "05 months",
+      "Fee": "Rs.52,000"
+    },
+    "Network Security": {
+      "Course Code": "SCCS003",
+      "Duration": "04 months",
+      "Fee": "Rs.38,000"
+    },
+    "C Programming Language": {
+      "Course Code": "SCCS004",
+      "Duration": "04 months",
+      "Fee": "Rs.49,000"
+    },
+    "Advanced Multimedia Web Design & Development Techniques": {
+      "Course Code": "SCCS005",
+      "Duration": "05 months",
+      "Fee": "Rs.55,000"
+    },
+    "Web Programming with HTML,CSS & JavaScript": {
+      "Course Code": "SCCS006",
+      "Duration": "06 months",
+      "Fee": "Rs.50,000"
+    },
+    "Advanced Programming in Python": {
+      "Course Code": "SCCS007",
+      "Duration": "04 months",
+      "Fee": "Rs.45,000"
+    },
+    "Computer Graphics": {
+      "Course Code": "SCCS008",
+      "Duration": "05 months",
+      "Fee": "Rs.55,000"
+    },
+    "Cloud Computing": {
+      "Course Code": "SCCS009",
+      "Duration": "05 months",
+      "Fee": "Rs.60,000"
+    },
+    "Internet of Things(IoT)": {
+      "Course Code": "SCCS010",
+      "Duration": "04 months",
+      "Fee": "Rs.44,000"
+    }
+  },
+  "School of Life Science": {
+    "Lab Techniques in Life Sciences": {
+      "Course Code": "SLSC001",
+      "Duration": "06 months",
+      "Fee": "Rs.55,000"
+    },
+    "Food and Nutrition Science": {
+      "Course Code": "SLSC002",
+      "Duration": "06 months",
+      "Fee": "Rs.75,000"
+    },
+    "Environmental Biology": {
+      "Course Code": "SLSC003",
+      "Duration": "06 months",
+      "Fee": "Rs.68,000"
+    },
+    "Cell & Molecular Biology": {
+      "Course Code": "SLSC004",
+      "Duration": "06 months",
+      "Fee": "Rs.78,000"
+    },
+    "Public Health & Epidemiology": {
+      "Course Code": "SLSC005",
+      "Duration": "06 months",
+      "Fee": "Rs.60,000"
+    }
+  },
+  "School of Art": {
+    "Figure Drawing and Anatomy": {
+      "Course Code": "SART001",
+      "Duration": "04 months",
+      "Fee": "Rs.60,000"
+    },
+    "Acting & Theatre Performance": {
+      "Course Code": "SART002",
+      "Duration": "07 months",
+      "Fee": "Rs.75,000"
+    },
+    "Mixed Media & Installation Art": {
+      "Course Code": "SART003",
+      "Duration": "06 months",
+      "Fee": "Rs.72,000"
+    },
+    "Voice and Speech Training": {
+      "Course Code": "SART004",
+      "Duration": "06 months",
+      "Fee": "Rs.65,000"
+    },
+    "Basic Direction and Scriptwriting": {
+      "Course Code": "SART005",
+      "Duration": "07 months",
+      "Fee": "Rs.75,000"
+    },
+    "Film Studies & Cinematography": {
+      "Course Code": "SART006",
+      "Duration": "12 months",
+      "Fee": "Rs.100,000"
+    }
+  }
+}

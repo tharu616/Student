@@ -1,7 +1,10 @@
 package com.Student.Registration.servlet;
 
 import com.Student.Registration.dao.UserDao;
+import com.Student.Registration.model.CourseRegistration;
 import com.Student.Registration.model.User;
+import com.Student.Registration.util.FileUtils;
+import com.Student.Registration.util.RegistrationQueueManager;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -9,6 +12,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
+import java.util.UUID;
+
 import org.mindrot.jbcrypt.BCrypt;
 
 @WebServlet("/StudentRegistrationServlet")
@@ -49,12 +54,20 @@ public class StudentRegistrationServlet extends HttpServlet {
                     parentFullName, parentContactNumber, parentEmail
             );
 
+
+            String registerNumber = UUID.randomUUID().toString();
+            user.setRegisterNumber(registerNumber);
+
             // Save user
             UserDao userDao = new UserDao();
             userDao.saveUser(user);
 
+            // Store user email in session for later use
+            request.getSession().setAttribute("userEmail", email);
+            request.getSession().setAttribute("userName", fullName);
+
             // Redirect on success
-            response.sendRedirect("registrationSuccess.jsp");
+            response.sendRedirect("LoadCoursesServlet");
 
         } catch (Exception e) {
             e.printStackTrace();

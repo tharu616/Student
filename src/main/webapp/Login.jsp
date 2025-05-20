@@ -32,11 +32,15 @@
     <div class="row justify-content-center">
         <div class="col-md-12 border p-4 rounded shadow">
             <div class="row">
+                <!-- Place this above the form -->
+                <% if (request.getParameter("error") != null) { %>
+                <div class="alert alert-danger">Invalid email or password.</div>
+                <% } %>
 
                 <!-- Left Column: Login Form -->
                 <div class="col-md-6 d-flex flex-column justify-content-center">
                     <h2 class="text-center mb-4">Login</h2>
-                    <form action="/login" method="POST">
+                    <form action="LoginServlet" method="POST">
 
                         <!-- email Field -->
                         <!-- Email Field -->
@@ -81,10 +85,6 @@
         </div>
     </div>
 </div>
-
-<% if (request.getParameter("error") != null) { %>
-<div class="alert alert-danger">Invalid username or password.</div>
-<% } %>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

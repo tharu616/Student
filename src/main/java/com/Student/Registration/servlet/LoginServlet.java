@@ -1,19 +1,19 @@
 package com.Student.Registration.servlet;
 
 import com.Student.Registration.dao.UserDao;
+import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import org.mindrot.jbcrypt.BCrypt;
-
 import java.io.IOException;
 
-@WebServlet("/login")
+
 public class LoginServlet extends HttpServlet {
 
-    protected boolean doPost(HttpServletRequest request, HttpServletResponse response, String storedPass) throws IOException {
+    @Override
+        protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String inputEmail = request.getParameter("email");
         String inputPassword = request.getParameter("password");
 
@@ -23,15 +23,10 @@ public class LoginServlet extends HttpServlet {
         if (isValid) {
             HttpSession session = request.getSession();
             session.setAttribute("userEmail", inputEmail);
-            response.sendRedirect("loginSuccess.jsp");
+            response.sendRedirect("UserDashboardServlet");  // Change this line
         } else {
             response.sendRedirect("Login.jsp?error=1");
         }
 
-        if (BCrypt.checkpw(inputPassword, storedPass)) {
-            return true;
-        } else {
-            return false;
-        }
     }
 }

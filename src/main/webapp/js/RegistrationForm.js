@@ -23,7 +23,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
     const fullName = document.getElementById("fullName").value.trim();
     if (!fullName) {
         showError("fullName", "Full name is required.");
-    } else if (!/^[A-Za-z\s]{2,}$/.test(fullName)) {
+    } else if (!/^[A-Za-z\s]{2,}$/. test(fullName)) {
         showError("fullName", "Please enter a valid full name (letters and spaces only).");
     }
 
